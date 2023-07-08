@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: lightblue;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    
+    .category {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5%;
+    }
+    
+    .book {
+      padding: 10px;
+    }
+    
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      font-style: italic;
+    }
+    
+    .header {
+      text-align: center;
+      font-size: 32px;
+      font-style: italic;
+      margin-bottom: 20px;
+      background-color: #c0c0c0;
+      padding: 10px;
+      border-radius: 3%;
+    }
+    
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    
+    .top-links {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .link {
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">EriTech Bootcamp</div>
+  
+  <div class="top-links">
+    <a class="link" href="#">Home</a>
+    <a class="link" href="#">Contact</a>
+    <a class="link" href="#">About</a>
+  </div>
+  
+  <div class="search-bar">
+    <input type="text" placeholder="Search books...">
+    <button>Search</button>
+  </div>
+  
+  <div class="container">
+    <div class="category">
+      <h2>Frontend</h2>
+      <div class="book">HTML</div>
+      <div class="book">CSS</div>
+      <div class="book">JavaScript</div>
+      <div class="book">React</div>
+      <div class="book">AngularJS</div>
+      <div class="book">Vue</div>
+    </div>
+    <div class="category">
+      <h2>Backend</h2>
+      <div class="book">Java</div>
+      <div class="book">Python</div>
+      <div class="book">C++</div>
+      <div class="book">C#</div>
+      <div class="book">SQL</div>
+      <div class="book">MySQL</div>
+    </div>
+    <div class="category">
+      <h2>Data Analytics</h2>
+      <div class="book">Generative Al</div>
+      <div class="book">Machine Learing</div>
+      <div class="book">Data Science</div>
+      <div class="book">NumPy</div>
+      <div class="book">Statistics</div>
+      <div class="book">Excel</div>
+    </div>
+  </div>
+</body>
+</html>

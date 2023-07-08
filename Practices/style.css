@@ -1,0 +1,33 @@
+ 
+ .container {
+  display: grid;
+  grid-template-rows: 50px 300px 50px;
+  grid-template-areas:
+    "head head head"
+    "sidebar main main"
+    "footer footer footer";
+  margin: 20px;
+}
+
+.head {
+  grid-area: head;
+  background-color: lightsalmon;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: brown;
+}
+
+.main {
+  grid-area: main;
+  background-color: chartreuse;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: cyan;
+}  

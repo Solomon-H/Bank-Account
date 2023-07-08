@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    
+    <form id="expenseForm">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName"> <br>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity"> <br>
+      
+      <label for="price">Price:</label>
+      <input type="number" id="price"> <br>
+      
+      <button type="button" onclick="addItem()">Add Expense</button>
+    </form>
+    
+    <table id="expenseTable">
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="expenseList"></tbody>
+      <tfoot>
+        <tr>
+          <td class="total" colspan="2">Total:</td>
+          <td class="total" id="totalAmount">0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
